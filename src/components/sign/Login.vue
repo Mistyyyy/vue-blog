@@ -2,12 +2,12 @@
   <form action="">
     <div class="login-container">
         <div class="js-inline">
-            <label for="username" class="js-label">用户名</label>
-            <input type="text" placeholder="请输入用户名" class="js-input" id="username" v-model="userInfo.username">
+            <label for="username" class="js-label" >用户名</label>
+            <input type="text" placeholder="请输入用户名" class="js-input" id="username" v-model="userInfo.username" v-checkParmas>
         </div>
         <div class="js-inline">
             <label for="password" class="js-label">密码</label>
-            <input type="password" placeholder="请输入密码" class="js-input" id="password" v-model="userInfo.password">
+            <input type="password" placeholder="请输入密码" class="js-input" id="password" v-model="userInfo.password" v-checkPassword>
         </div>
         <div class="js-inline">
             <input type="checkbox" id="remember" class="js-fl js-checkbox">

@@ -3,16 +3,16 @@
     <div class="login-container">
         <div class="js-inline">
             <label for="username" class="js-label">用户名</label>
-            <input type="text" placeholder="请输入用户名" class="js-input" id="username" v-model="registerInfo.username">
+            <input type="text" placeholder="请输入用户名" class="js-input" id="username" v-model="registerInfo.username" v-checkParmas>
         </div>
         <div class="js-inline">
             <label for="password" class="js-label">密码</label>
-            <input type="password" placeholder="请输入密码" class="js-input" id="password" v-model="registerInfo.password">
+            <input type="password" placeholder="请输入密码" class="js-input" id="password" v-model="registerInfo.password" v-checkPassword>
         </div>
         <div class="js-inline">
             <label for="password" class="js-label">确认
               密码</label>
-            <input type="password" placeholder="请再次输入密码" class="js-input" id="password" v-model="repassword">
+            <input type="password" placeholder="请再次输入密码" class="js-input" id="password" v-model="repassword" v-checkEqual="{equal:registerInfo.password}">
         </div>
         <div class="js-inline">
             <button class="btn js-btnlogin" @click.prevent="toMainPage">注册</button>

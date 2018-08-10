@@ -4,10 +4,8 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import store from './store'
-import axios from 'axios'
 import './process'
-axios.defaults.baseURL = 'http://blog.app/api'
-Vue.prototype.$http = axios
+import './directive/index'
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
